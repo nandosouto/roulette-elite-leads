@@ -1,12 +1,14 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Testimonials from '../components/Testimonials';
-import Notifications from '../components/Notifications';
 import Footer from '../components/Footer';
 import CookieConsent from '../components/CookieConsent';
 import { initializeAnalytics } from '../utils/tracking';
+
+// Lazy load non-critical components
+const Testimonials = lazy(() => import('../components/Testimonials'));
+const Notifications = lazy(() => import('../components/Notifications'));
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -15,7 +17,7 @@ const Index: React.FC = () => {
     
     // Setup meta tags dynamically to avoid build errors
     if (typeof document !== 'undefined') {
-      document.title = "Estratégias de Roleta ao Vivo - Pliim Bet";
+      document.title = "Estratégias de Roleta ao Vivo - 27 top";
       
       // Meta description
       let metaDescription = document.querySelector('meta[name="description"]');
@@ -24,7 +26,7 @@ const Index: React.FC = () => {
         metaDescription.setAttribute('name', 'description');
         document.head.appendChild(metaDescription);
       }
-      metaDescription.setAttribute('content', 'Domine a roleta ao vivo com as estratégias dos especialistas da Pliim Bet. Receba sinais e calls para lucrar todos os dias!');
+      metaDescription.setAttribute('content', 'Domine a roleta ao vivo com as estratégias dos especialistas da 27 top. Receba sinais e calls para lucrar todos os dias!');
       
       // Meta keywords
       let metaKeywords = document.querySelector('meta[name="keywords"]');
@@ -33,7 +35,7 @@ const Index: React.FC = () => {
         metaKeywords.setAttribute('name', 'keywords');
         document.head.appendChild(metaKeywords);
       }
-      metaKeywords.setAttribute('content', 'estratégias de roleta, roleta ao vivo, apostas online, pliim bet, cassino online, sinais roleta');
+      metaKeywords.setAttribute('content', 'estratégias de roleta, roleta ao vivo, apostas online, 27 top, cassino online, sinais roleta');
     }
     
     // Clean up event listeners from analytics
@@ -60,12 +62,16 @@ const Index: React.FC = () => {
         {/* Hero section with CTA */}
         <Hero />
         
-        {/* Testimonials carousel */}
-        <Testimonials />
+        {/* Testimonials carousel - lazy loaded */}
+        <Suspense fallback={<div className="h-96 bg-blue-900 flex items-center justify-center">Carregando depoimentos...</div>}>
+          <Testimonials />
+        </Suspense>
       </main>
       
-      {/* Dynamic notifications */}
-      <Notifications />
+      {/* Dynamic notifications - lazy loaded */}
+      <Suspense fallback={null}>
+        <Notifications />
+      </Suspense>
       
       {/* Cookie consent banner */}
       <CookieConsent />

@@ -46,10 +46,19 @@
 
   body {
     @apply bg-background text-foreground font-inter;
+    text-rendering: optimizeSpeed;
   }
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-montserrat;
+  }
+  
+  img, svg {
+    content-visibility: auto;
+  }
+  
+  footer {
+    content-visibility: auto;
   }
 }
 
@@ -90,4 +99,14 @@
   background-color: rgba(13, 27, 42, 0.9);
   border: 1px solid #FFD700;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Performance optimizations */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

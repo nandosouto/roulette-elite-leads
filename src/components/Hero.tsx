@@ -17,7 +17,8 @@ const Hero: React.FC = () => {
         backgroundImage: 'url(https://i.ibb.co/h1LvfNjT/banner-ederson.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundAttachment: 'fixed',
+        backgroundColor: '#050a14' // Fallback color while image loads
       }}
     >
       <div className="bg-overlay absolute inset-0"></div>
