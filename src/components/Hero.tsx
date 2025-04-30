@@ -27,15 +27,19 @@ const Hero: React.FC = () => {
           DOMINE A ROLETA AO VIVO COM A ESTRATÉGIA DOS TOPS!
         </h1>
         
+        <p className="text-white text-lg md:text-xl mb-6 text-shadow">
+          Entre <span className="text-roulette-gold font-bold">GRATUITAMENTE</span> no nosso grupo e participe das lives de operação na roleta ao vivo!
+        </p>
+        
         <p className="text-white text-lg md:text-xl mb-12 text-shadow">
-          Entre agora no nosso grupo FREE e receba sinais e calls ao vivo para lucrar todos os dias!
+          Lucre de <span className="text-roulette-gold font-bold">R$200 a R$500 por dia</span> com nosso método 100% gratuito!
         </p>
         
         <button 
           onClick={handleCTAClick}
-          className="bg-roulette-green hover:bg-opacity-90 text-white font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 transform hover:scale-105 animate-pulse-scale gold-border"
+          className="bg-blue-700 hover:bg-blue-800 text-white font-bold py-4 px-8 rounded-lg text-lg md:text-xl transition-all duration-300 transform hover:scale-105 animate-pulse-scale gold-border"
         >
-          QUERO A ESTRATÉGIA AGORA!
+          PARTICIPAR DAS LIVES GRATUITAS AGORA!
         </button>
         
         <p className="text-white text-sm opacity-75 mt-4">

@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Star, CircleChevronLeft, CircleChevronRight } from 'lucide-react';
 
@@ -16,7 +15,7 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: "João P.",
     title: "Apostador Profissional",
-    text: "Ganhei R$ 500 em 2 horas com a estratégia! Incrível!",
+    text: "Lucro R$ 350 por dia usando o método gratuito do 27 top!",
     stars: 5,
     avatar: "https://i.pravatar.cc/150?img=8"
   },
@@ -24,7 +23,7 @@ const testimonials: Testimonial[] = [
     id: 2,
     name: "Mariana S.",
     title: "Jogadora Casual",
-    text: "O suporte da Pliim Bet mudou meu jogo!",
+    text: "As lives gratuitas de operação mudaram minha vida financeira!",
     stars: 5,
     avatar: "https://i.pravatar.cc/150?img=5"
   },
@@ -32,7 +31,7 @@ const testimonials: Testimonial[] = [
     id: 3,
     name: "Carlos F.",
     title: "Entusiasta de Jogos",
-    text: "As dicas de roleta ao vivo são perfeitas!",
+    text: "Ganhei R$ 480 no meu primeiro dia nas lives de roleta ao vivo!",
     stars: 5,
     avatar: "https://i.pravatar.cc/150?img=11"
   },
@@ -40,7 +39,7 @@ const testimonials: Testimonial[] = [
     id: 4,
     name: "Thalita N.",
     title: "Mentora de Apostas",
-    text: "Transformei minhas apostas com a Pliim Bet!",
+    text: "Método 100% gratuito e lucro consistente de R$ 200 por dia!",
     stars: 5,
     avatar: "https://i.pravatar.cc/150?img=9"
   },
@@ -48,7 +47,7 @@ const testimonials: Testimonial[] = [
     id: 5,
     name: "La Lopes",
     title: "Especialista em Jogos Online",
-    text: "A melhor estratégia de roleta que já usei!",
+    text: "A melhor estratégia gratuita de roleta que já usei! R$ 500 em um dia!",
     stars: 5,
     avatar: "https://i.pravatar.cc/150?img=3"
   }
@@ -111,14 +110,14 @@ const Testimonials: React.FC = () => {
   const visibleTestimonials = testimonials.slice(activeIndex, activeIndex + visibleCount);
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-roulette-dark bg-opacity-90 relative z-10">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 bg-opacity-90 relative z-10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-roulette-gold mb-3">
             QUEM JOGA COM ESTRATÉGIA FALA COM RESULTADO
           </h2>
           <p className="text-white text-base md:text-lg">
-            Depoimentos reais de quem já lucra com a Pliim Bet e domina a roleta ao vivo.
+            Depoimentos reais de quem já lucra com o 27 top e domina a roleta ao vivo.
           </p>
         </div>
         

@@ -10,7 +10,7 @@
     --background: 0 0% 0%; /* Black background */
     --foreground: 0 0% 100%; /* White text */
 
-    --card: 200 10% 14%; /* Dark card background (#1C2526) */
+    --card: 215 50% 15%; /* Dark blue card background */
     --card-foreground: 0 0% 100%; /* White text */
 
     --popover: 0 0% 0%; /* Black popover */
@@ -72,7 +72,7 @@
   }
   
   .red-gradient-bg {
-    background: linear-gradient(to right, #FF0000, #FF3333);
+    background: linear-gradient(to right, #0047AB, #000080);
   }
 }
 
@@ -87,7 +87,7 @@
 }
 
 .testimonial-card {
-  background-color: rgba(28, 37, 38, 0.9);
+  background-color: rgba(13, 27, 42, 0.9);
   border: 1px solid #FFD700;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
