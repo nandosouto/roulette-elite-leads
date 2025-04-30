@@ -1,20 +1,88 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>roulette-elite-leads</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Estratégias de Roleta ao Vivo - Pliim Bet</title>
+    <meta name="description" content="Domine a roleta ao vivo com as estratégias dos especialistas da Pliim Bet. Receba sinais e calls para lucrar todos os dias!" />
+    <meta name="keywords" content="estratégias de roleta, roleta ao vivo, apostas online, pliim bet, cassino online, sinais roleta" />
+    <meta name="author" content="Pliim Bet" />
 
-    <meta property="og:title" content="roulette-elite-leads" />
-    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:title" content="Estratégias de Roleta ao Vivo - Pliim Bet" />
+    <meta property="og:description" content="Domine a roleta ao vivo com as estratégias dos especialistas da Pliim Bet." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta property="og:image" content="https://i.ibb.co/h1LvfNjT/banner-ederson.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <meta name="twitter:image" content="https://i.ibb.co/h1LvfNjT/banner-ederson.jpg" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MQ66SJ9R');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C98LHT3FR"></script>
+    <script>
+      window.dataLayer=window.dataLayer||[];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js',new Date());
+      gtag('config','G-4C98LHT3FR',{
+        page_title:document.title,
+        page_location:window.location.href,
+        user_id:function(){ 
+          return Math.abs(Array.from(navigator.userAgent+navigator.language+(new Date().getTimezoneOffset()/60))
+            .reduce((a,c) => (a = (a<<5) - a + c.charCodeAt(0)) & a, 0))
+            .toString(16)
+        }()
+      });
+      
+      // Initial consent state - default to denied until consent is given
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied'
+      });
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Meta Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=true;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      
+      // Create a simple hashing function for external_id
+      function hashString(str) {
+        let hash = 0;
+        if (str.length === 0) return hash.toString();
+        for (let i = 0; i < str.length; i++) {
+          const char = str.charCodeAt(i);
+          hash = ((hash << 5) - hash) + char;
+          hash = hash & hash; // Convert to 32bit integer
+        }
+        return Math.abs(hash).toString(16);
+      }
+      
+      // Initialize with user data
+      fbq('init', '981472957506024', {
+        external_id: hashString(navigator.userAgent+navigator.language+(new Date().getTimezoneOffset()/60)),
+        client_user_agent: navigator.userAgent
+      }, {autoConfig:true});
+      
+      // Initial consent state - wait for user consent
+      fbq('consent', 'revoke');
+      
+      // Track page view
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent', {
+        content_type: 'landing_page',
+        content_name: 'Grupo Free Roleta',
+        content_category: 'Gambling',
+        content_ids: ['grupo_free_roleta']
+      });
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=981472957506024&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel -->
   </head>
 
   <body>
@@ -22,5 +90,11 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ66SJ9R" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
